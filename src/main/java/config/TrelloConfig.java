@@ -2,31 +2,11 @@ package config;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
 
 public class TrelloConfig {
-    private static final Properties properties = new Properties();
+    public static final String API_TOKEN = "ATTA45c9255c624fc7247656544bb8830c9b9d90e0d8f4de069540d5ee1cbc400768525AF322";
+    public static final String API_KEY = "a95297bf035bd7b70171a607f1c7486b";
     public static final String BASE_URL = "https://api.trello.com/1";
-    public static String API_KEY;
-    public static String API_TOKEN;
-
-    static {
-        try {
-            // Önce config.properties'i dene
-            String configPath = "src/test/resources/config.properties";
-            FileInputStream input = new FileInputStream(configPath);
-            properties.load(input);
-            
-            API_KEY = properties.getProperty("trello.api.key");
-            API_TOKEN = properties.getProperty("trello.api.token");
-            
-        } catch (IOException e) {
-            System.out.println("Config file not found. Please create config.properties file from config.properties.example");
-            e.printStackTrace();
-        }
-    }
 
     public static RequestSpecification requestSpecification() {
         return new RequestSpecBuilder()
