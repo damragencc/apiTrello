@@ -270,7 +270,7 @@ public class BoardService {
                 .response();
     }
 
-// 1. Get Memberships of a Board
+
 public Response getMembershipsOfBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -283,7 +283,7 @@ public Response getMembershipsOfBoard(String boardId) {
             .response();
 }
 
-// 2. Get a Board
+
 public Response getBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -296,7 +296,7 @@ public Response getBoard(String boardId) {
             .response();
 }
 
-// 3. Get Custom Fields of a Board
+
 public Response getCustomFieldsOfBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -309,7 +309,7 @@ public Response getCustomFieldsOfBoard(String boardId) {
             .response();
 }
 
-// 4. Get Cards of a Board
+
 public Response getCardsOfBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -322,7 +322,7 @@ public Response getCardsOfBoard(String boardId) {
             .response();
 }
 
-// 5. Get Actions of a Board
+
 public Response getActionsOfBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -335,7 +335,7 @@ public Response getActionsOfBoard(String boardId) {
             .response();
 }
 
-// 6. Get Checklists of a Board
+
 public Response getChecklistsOfBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -348,7 +348,7 @@ public Response getChecklistsOfBoard(String boardId) {
             .response();
 }
 
-// 7. Get Stars of a Board
+
 public Response getStarsOfBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -361,7 +361,7 @@ public Response getStarsOfBoard(String boardId) {
             .response();
 }
 
-// 8. Get Labels of a Board
+
 public Response getLabelsOfBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -374,7 +374,7 @@ public Response getLabelsOfBoard(String boardId) {
             .response();
 }
 
-// 9. Get Lists of a Board
+
 public Response getListsOfBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -387,7 +387,7 @@ public Response getListsOfBoard(String boardId) {
             .response();
 }
 
-// 10. Create a Label for a Board
+
 public Response createLabelForBoard(String boardId, String name, String color) {
     return given()
             .queryParam("name", name)
@@ -402,7 +402,7 @@ public Response createLabelForBoard(String boardId, String name, String color) {
             .response();
 }
 
-// 11. Create a List for a Board
+
 public Response createListForBoard(String boardId, String name) {
     return given()
             .queryParam("name", name)
@@ -420,7 +420,7 @@ public Response createListForBoard(String boardId, String name) {
 
 
 
-// 16. Update a Board
+
 public Response updateBoard(String boardId, String name, String desc) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -435,7 +435,7 @@ public Response updateBoard(String boardId, String name, String desc) {
             .response();
 }
 
-// 17. Delete a Board
+
 public Response deleteBoard(String boardId) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -447,7 +447,7 @@ public Response deleteBoard(String boardId) {
             .response();
 }
 
-// 18. Create Tag for Board
+
 public Response createTagForBoard(String boardId, String tagName) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -474,7 +474,7 @@ public Response markBoardAsViewed(String boardId) {
             .response();
 }
 
-// 20. Update Email Position Preference
+
 public Response updateEmailPositionPref(String boardId, String position) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
@@ -487,7 +487,7 @@ public Response updateEmailPositionPref(String boardId, String position) {
             .response();
 }
 
-// 21. Update Email List Preference
+
 public Response updateIdEmailListPref(String boardId, String value) {
     return given()
             .queryParam("key", TrelloConfig.API_KEY)
