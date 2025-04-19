@@ -13,13 +13,15 @@ cd apiTrello
 2. Trello API Bilgilerini Ayarlama:
    - [Trello Developer Portal](https://trello.com/app-key)'a gidin
    - API Key ve Token bilgilerinizi alın
-   - `src/main/java/config/TrelloConfig.java` dosyasını açın ve aşağıdaki değerleri kendi bilgilerinizle güncelleyin:
-   ```java
-   public static final String API_TOKEN = "your-api-token";
-   public static final String API_KEY = "your-api-key";
+   - `src/test/resources/config.properties.example` dosyasını `config.properties` olarak kopyalayın:
+   ```bash
+   cp src/test/resources/config.properties.example src/test/resources/config.properties
    ```
-
-   NOT: Bu değişiklikleri asla commit etmeyin!
+   - `config.properties` dosyasını açın ve kendi API bilgilerinizi ekleyin:
+   ```properties
+   trello.api.key=your_api_key_here
+   trello.api.token=your_token_here
+   ```
 
 3. Maven bağımlılıklarını yükleyin:
 ```bash
@@ -49,7 +51,7 @@ Proje aşağıdaki Trello API işlemlerini test eder:
 
 ## Önemli Notlar
 
-- API bilgilerinizi güvenli tutun, asla GitHub'a push etmeyin
+- API bilgilerinizi güvenli tutun, `config.properties` dosyası .gitignore'da olduğu için GitHub'a gönderilmeyecektir
 - Her test çalıştırmasından sonra oluşturulan test board'ları otomatik olarak silinir
 - Testler paralel çalışacak şekilde tasarlanmıştır
 
