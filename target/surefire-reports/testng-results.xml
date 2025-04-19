@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="25" passed="24" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-19T18:05:10 GMT+03:00" name="Surefire suite" finished-at="2025-04-19T18:05:29 GMT+03:00" duration-ms="18457">
+    <groups>
+    </groups>
+    <test started-at="2025-04-19T18:05:10 GMT+03:00" name="Surefire test" finished-at="2025-04-19T18:05:29 GMT+03:00" duration-ms="18457">
+      <class name="tests.BoardTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:10 GMT+03:00" name="setup" finished-at="2025-04-19T18:05:12 GMT+03:00" duration-ms="1688" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testAddMemberToBoard()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:12 GMT+03:00" name="testAddMemberToBoard" finished-at="2025-04-19T18:05:13 GMT+03:00" duration-ms="592" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddMemberToBoard -->
+        <test-method signature="testBoardAksiyonlariniGetir()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:13 GMT+03:00" name="testBoardAksiyonlariniGetir" finished-at="2025-04-19T18:05:13 GMT+03:00" duration-ms="328" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardAksiyonlariniGetir -->
+        <test-method signature="testBoardAlaniniGetir()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:13 GMT+03:00" name="testBoardAlaniniGetir" finished-at="2025-04-19T18:05:13 GMT+03:00" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardAlaniniGetir -->
+        <test-method signature="testBoardEtiketleriGetir()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:13 GMT+03:00" name="testBoardEtiketleriGetir" finished-at="2025-04-19T18:05:14 GMT+03:00" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardEtiketleriGetir -->
+        <test-method signature="testBoardFiltreliListeleriGetir()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:14 GMT+03:00" name="testBoardFiltreliListeleriGetir" finished-at="2025-04-19T18:05:14 GMT+03:00" duration-ms="306" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardFiltreliListeleriGetir -->
+        <test-method signature="testBoardGuncelle()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:14 GMT+03:00" name="testBoardGuncelle" finished-at="2025-04-19T18:05:14 GMT+03:00" duration-ms="418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardGuncelle -->
+        <test-method signature="testBoardKontrolListeleriniGetir()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:14 GMT+03:00" name="testBoardKontrolListeleriniGetir" finished-at="2025-04-19T18:05:15 GMT+03:00" duration-ms="270" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardKontrolListeleriniGetir -->
+        <test-method signature="testBoardListeleriGetir()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:15 GMT+03:00" name="testBoardListeleriGetir" finished-at="2025-04-19T18:05:15 GMT+03:00" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardListeleriGetir -->
+        <test-method signature="testBoardUyelikleriGetir()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:15 GMT+03:00" name="testBoardUyelikleriGetir" finished-at="2025-04-19T18:05:15 GMT+03:00" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardUyelikleriGetir -->
+        <test-method signature="testBoardYildizlariniGetir()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:15 GMT+03:00" name="testBoardYildizlariniGetir" finished-at="2025-04-19T18:05:16 GMT+03:00" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBoardYildizlariniGetir -->
+        <test-method signature="testCreateTagForBoard()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:16 GMT+03:00" name="testCreateTagForBoard" finished-at="2025-04-19T18:05:16 GMT+03:00" duration-ms="423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateTagForBoard -->
+        <test-method signature="testEtiketOlustur()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:16 GMT+03:00" name="testEtiketOlustur" finished-at="2025-04-19T18:05:16 GMT+03:00" duration-ms="408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEtiketOlustur -->
+        <test-method signature="testGetCardsOnBoard()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:16 GMT+03:00" name="testGetCardsOnBoard" finished-at="2025-04-19T18:05:17 GMT+03:00" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCardsOnBoard -->
+        <test-method signature="testGetCustomFieldsForBoard()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:17 GMT+03:00" name="testGetCustomFieldsForBoard" finished-at="2025-04-19T18:05:17 GMT+03:00" duration-ms="279" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetCustomFieldsForBoard -->
+        <test-method signature="testGetFilteredCardsOnBoard()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:17 GMT+03:00" name="testGetFilteredCardsOnBoard" finished-at="2025-04-19T18:05:17 GMT+03:00" duration-ms="290" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetFilteredCardsOnBoard -->
+        <test-method signature="testInviteMemberToBoard()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:17 GMT+03:00" name="testInviteMemberToBoard" finished-at="2025-04-19T18:05:18 GMT+03:00" duration-ms="982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInviteMemberToBoard -->
+        <test-method signature="testListeOlustur()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:18 GMT+03:00" name="testListeOlustur" finished-at="2025-04-19T18:05:19 GMT+03:00" duration-ms="356" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testListeOlustur -->
+        <test-method signature="testMarkBoardAsViewed()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:19 GMT+03:00" name="testMarkBoardAsViewed" finished-at="2025-04-19T18:05:19 GMT+03:00" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMarkBoardAsViewed -->
+        <test-method signature="testRemoveMemberFromBoard()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:19 GMT+03:00" name="testRemoveMemberFromBoard" finished-at="2025-04-19T18:05:20 GMT+03:00" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRemoveMemberFromBoard -->
+        <test-method signature="testUpdateEmailPositionPref()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:20 GMT+03:00" name="testUpdateEmailPositionPref" finished-at="2025-04-19T18:05:22 GMT+03:00" duration-ms="2381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateEmailPositionPref -->
+        <test-method signature="testUpdateIdEmailListPref()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:22 GMT+03:00" name="testUpdateIdEmailListPref" finished-at="2025-04-19T18:05:23 GMT+03:00" duration-ms="870" status="FAIL">
+          <exception class="io.restassured.internal.http.HttpResponseException">
+            <message>
+              <![CDATA[status code: 404, reason phrase: Not Found]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[io.restassured.internal.http.HttpResponseException: status code: 404, reason phrase: Not Found
+at io.restassured.internal.http.HTTPBuilder.defaultFailureHandler(HTTPBuilder.java:635)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+at groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1022)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1222)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+at groovy.lang.Closure.call(Closure.java:418)
+at groovy.lang.Closure.call(Closure.java:434)
+at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:150)
+at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
+at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:792)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
+at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:792)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at io.restassured.filter.Filter$filter.call(Unknown Source)
+at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+at io.restassured.filter.FilterContext$next.call(Unknown Source)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:792)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:792)
+at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:180)
+at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy)
+at services.BoardService.updateIdEmailListPref(BoardService.java:498)
+at tests.BoardTest.testUpdateIdEmailListPref(BoardTest.java:190)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- io.restassured.internal.http.HttpResponseException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateIdEmailListPref -->
+        <test-method signature="testUpdateMembershipOnBoard()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:23 GMT+03:00" name="testUpdateMembershipOnBoard" finished-at="2025-04-19T18:05:25 GMT+03:00" duration-ms="2368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateMembershipOnBoard -->
+        <test-method signature="testUpdateShowSidebar()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:25 GMT+03:00" name="testUpdateShowSidebar" finished-at="2025-04-19T18:05:26 GMT+03:00" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateShowSidebar -->
+        <test-method signature="testUpdateShowSidebarActivity()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:26 GMT+03:00" name="testUpdateShowSidebarActivity" finished-at="2025-04-19T18:05:27 GMT+03:00" duration-ms="1346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateShowSidebarActivity -->
+        <test-method signature="testUpdateShowSidebarBoardActions()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:27 GMT+03:00" name="testUpdateShowSidebarBoardActions" finished-at="2025-04-19T18:05:27 GMT+03:00" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateShowSidebarBoardActions -->
+        <test-method is-config="true" signature="cleanup()[pri:0, instance:tests.BoardTest@4387b79e]" started-at="2025-04-19T18:05:27 GMT+03:00" name="cleanup" finished-at="2025-04-19T18:05:29 GMT+03:00" duration-ms="1676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cleanup -->
+      </class> <!-- tests.BoardTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

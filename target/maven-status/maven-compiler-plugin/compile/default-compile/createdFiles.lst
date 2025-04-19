@@ -1,0 +1,4 @@
+pages/TrelloPage.class
+config/TrelloConfig.class
+services/BoardService.class
+pages/BasePage.class

@@ -1,0 +1,886 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="tests.BoardTest" time="18.783" tests="25" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="23"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/damragenc/Desktop/apiTrello/target/test-classes:/Users/damragenc/Desktop/apiTrello/target/classes:/Users/damragenc/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/damragenc/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/damragenc/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/damragenc/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/damragenc/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/damragenc/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/damragenc/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/damragenc/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/damragenc/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/damragenc/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/damragenc/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/damragenc/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/damragenc/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/damragenc/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/damragenc/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/damragenc/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/damragenc/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/damragenc/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/damragenc/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/damragenc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.0/jackson-databind-2.15.0.jar:/Users/damragenc/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.0/jackson-annotations-2.15.0.jar:/Users/damragenc/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.0/jackson-core-2.15.0.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="23"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/damragenc/Desktop/apiTrello/target/surefire/surefirebooter-20250419180510600_3.jar /Users/damragenc/Desktop/apiTrello/target/surefire 2025-04-19T18-05-10_537-jvmRun1 surefire-20250419180510600_1tmp surefire_0-20250419180510600_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/damragenc/Desktop/apiTrello/target/test-classes:/Users/damragenc/Desktop/apiTrello/target/classes:/Users/damragenc/.m2/repository/io/rest-assured/rest-assured/5.3.0/rest-assured-5.3.0.jar:/Users/damragenc/.m2/repository/org/apache/groovy/groovy/4.0.6/groovy-4.0.6.jar:/Users/damragenc/.m2/repository/org/apache/groovy/groovy-xml/4.0.6/groovy-xml-4.0.6.jar:/Users/damragenc/.m2/repository/org/apache/httpcomponents/httpclient/4.5.13/httpclient-4.5.13.jar:/Users/damragenc/.m2/repository/org/apache/httpcomponents/httpcore/4.4.13/httpcore-4.4.13.jar:/Users/damragenc/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/damragenc/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/damragenc/.m2/repository/org/apache/httpcomponents/httpmime/4.5.13/httpmime-4.5.13.jar:/Users/damragenc/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/damragenc/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/damragenc/.m2/repository/io/rest-assured/json-path/5.3.0/json-path-5.3.0.jar:/Users/damragenc/.m2/repository/org/apache/groovy/groovy-json/4.0.6/groovy-json-4.0.6.jar:/Users/damragenc/.m2/repository/io/rest-assured/rest-assured-common/5.3.0/rest-assured-common-5.3.0.jar:/Users/damragenc/.m2/repository/io/rest-assured/xml-path/5.3.0/xml-path-5.3.0.jar:/Users/damragenc/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/damragenc/.m2/repository/org/testng/testng/7.7.1/testng-7.7.1.jar:/Users/damragenc/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/damragenc/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/damragenc/.m2/repository/org/webjars/jquery/3.6.1/jquery-3.6.1.jar:/Users/damragenc/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.15.0/jackson-databind-2.15.0.jar:/Users/damragenc/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.15.0/jackson-annotations-2.15.0.jar:/Users/damragenc/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.15.0/jackson-core-2.15.0.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/damragenc"/>
+    <property name="user.language" value="tr"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-10-15"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/23.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/damragenc/Desktop/apiTrello"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/damragenc/Desktop/apiTrello/target/surefire/surefirebooter-20250419180510600_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="23.0.1"/>
+    <property name="user.name" value="damragenc"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="14.7.2"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/damragenc/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/11/lhrc20xs4msbf2hm16lj1m0c0000gn/T/"/>
+    <property name="java.version" value="23.0.1"/>
+    <property name="user.dir" value="/Users/damragenc/Desktop/apiTrello"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/damragenc/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="23.0.1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="67.0"/>
+  </properties>
+  <testcase name="testAddMemberToBoard" classname="tests.BoardTest" time="0.595">
+    <system-out><![CDATA[Created test board with ID: 6803bba86e3f8bd57ba3d111
+Board üye ekleme response: {
+    "id": "6803bba86e3f8bd57ba3d111",
+    "members": [
+        {
+            "id": "6802a84cae324592ec4c6d96",
+            "activityBlocked": false,
+            "avatarHash": "deaee7df1804cda13af7d904cc84b28e",
+            "avatarUrl": "https://trello-members.s3.amazonaws.com/6802a84cae324592ec4c6d96/deaee7df1804cda13af7d904cc84b28e",
+            "fullName": "Damra",
+            "idMemberReferrer": null,
+            "initials": "D",
+            "nonPublic": {
+                
+            },
+            "nonPublicAvailable": true,
+            "username": "damra4",
+            "confirmed": true,
+            "memberType": "normal"
+        }
+    ],
+    "memberships": [
+        {
+            "id": "6803bba86e3f8bd57ba3d12a",
+            "idMember": "6802a84cae324592ec4c6d96",
+            "memberType": "normal",
+            "unconfirmed": false,
+            "deactivated": false,
+            "orgMemberType": "admin"
+        }
+    ]
+}
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="testBoardAksiyonlariniGetir" classname="tests.BoardTest" time="0.32">
+    <system-out><![CDATA[Board aksiyonları response: [
+    {
+        "id": "6803bba81ccfc49f43f751d6",
+        "idMemberCreator": "6802a84cae324592ec4c6d96",
+        "data": {
+            "idMember": "6802a84cae324592ec4c6d96",
+            "board": {
+                "id": "6803bba86e3f8bd57ba3d111",
+                "name": "Test Board",
+                "shortLink": "T078j7gB"
+            }
+        },
+        "appCreator": {
+            "id": "6802aba1352d50822e427bec"
+        },
+        "type": "makeNormalMemberOfBoard",
+        "date": "2025-04-19T15:05:12.962Z",
+        "limits": null,
+        "member": {
+            "id": "6802a84cae324592ec4c6d96",
+            "activityBlocked": false,
+            "avatarHash": "deaee7df1804cda13af7d904cc84b28e",
+            "avatarUrl": "https://trello-members.s3.amazonaws.com/6802a84cae324592ec4c6d96/deaee7df1804cda13af7d904cc84b28e",
+            "fullName": "Damra",
+            "idMemberReferrer": null,
+            "initials": "D",
+            "nonPublic": {
+                
+            },
+            "nonPublicAvailable": true,
+            "username": "damra4"
+        },
+        "memberCreator": {
+            "id": "6802a84cae324592ec4c6d96",
+            "activityBlocked": false,
+            "avatarHash": "deaee7df1804cda13af7d904cc84b28e",
+            "avatarUrl": "https://trello-members.s3.amazonaws.com/6802a84cae324592ec4c6d96/deaee7df1804cda13af7d904cc84b28e",
+            "fullName": "Damra",
+            "idMemberReferrer": null,
+            "initials": "D",
+            "nonPublic": {
+                
+            },
+            "nonPublicAvailable": true,
+            "username": "damra4"
+        }
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d14b",
+        "idMemberCreator": "6802a84cae324592ec4c6d96",
+        "data": {
+            "board": {
+                "id": "6803bba86e3f8bd57ba3d111",
+                "name": "Test Board",
+                "shortLink": "T078j7gB"
+            },
+            "organization": {
+                "id": "6802aaa1d54a6855c7a8f0b8",
+                "name": "Trello Workspace"
+            }
+        },
+        "appCreator": {
+            "id": "6802aba1352d50822e427bec"
+        },
+        "type": "addToOrganizationBoard",
+        "date": "2025-04-19T15:05:12.160Z",
+        "limits": null,
+        "memberCreator": {
+            "id": "6802a84cae324592ec4c6d96",
+            "activityBlocked": false,
+            "avatarHash": "deaee7df1804cda13af7d904cc84b28e",
+            "avatarUrl": "https://trello-members.s3.amazonaws.com/6802a84cae324592ec4c6d96/deaee7df1804cda13af7d904cc84b28e",
+            "fullName": "Damra",
+            "idMemberReferrer": null,
+            "initials": "D",
+            "nonPublic": {
+                
+            },
+            "nonPublicAvailable": true,
+            "username": "damra4"
+        }
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d146",
+        "idMemberCreator": "6802a84cae324592ec4c6d96",
+        "data": {
+            "creationMethod": null,
+            "board": {
+                "id": "6803bba86e3f8bd57ba3d111",
+                "name": "Test Board",
+                "shortLink": "T078j7gB"
+            }
+        },
+        "appCreator": {
+            "id": "6802aba1352d50822e427bec"
+        },
+        "type": "createBoard",
+        "date": "2025-04-19T15:05:12.150Z",
+        "limits": null,
+        "memberCreator": {
+            "id": "6802a84cae324592ec4c6d96",
+            "activityBlocked": false,
+            "avatarHash": "deaee7df1804cda13af7d904cc84b28e",
+            "avatarUrl": "https://trello-members.s3.amazonaws.com/6802a84cae324592ec4c6d96/deaee7df1804cda13af7d904cc84b28e",
+            "fullName": "Damra",
+            "idMemberReferrer": null,
+            "initials": "D",
+            "nonPublic": {
+                
+            },
+            "nonPublicAvailable": true,
+            "username": "damra4"
+        }
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testBoardAlaniniGetir" classname="tests.BoardTest" time="0.38">
+    <system-out><![CDATA[Board alanı response: {
+    "_value": "Test Board"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testBoardEtiketleriGetir" classname="tests.BoardTest" time="0.285">
+    <system-out><![CDATA[Board etiketleri response: [
+    {
+        "id": "6803bba86e3f8bd57ba3d157",
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "name": "",
+        "color": "blue",
+        "uses": 0
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d152",
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "name": "",
+        "color": "green",
+        "uses": 0
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d154",
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "name": "",
+        "color": "orange",
+        "uses": 0
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d156",
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "name": "",
+        "color": "purple",
+        "uses": 0
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d155",
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "name": "",
+        "color": "red",
+        "uses": 0
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d153",
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "name": "",
+        "color": "yellow",
+        "uses": 0
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testBoardFiltreliListeleriGetir" classname="tests.BoardTest" time="0.307">
+    <system-out><![CDATA[Board listeleri response: [
+    {
+        "id": "6803bba86e3f8bd57ba3d15f",
+        "name": "To Do",
+        "closed": false,
+        "color": null,
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "pos": 16384,
+        "subscribed": false,
+        "softLimit": null,
+        "type": null,
+        "datasource": {
+            "filter": false
+        }
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d160",
+        "name": "Doing",
+        "closed": false,
+        "color": null,
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "pos": 32768,
+        "subscribed": false,
+        "softLimit": null,
+        "type": null,
+        "datasource": {
+            "filter": false
+        }
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d161",
+        "name": "Done",
+        "closed": false,
+        "color": null,
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "pos": 49152,
+        "subscribed": false,
+        "softLimit": null,
+        "type": null,
+        "datasource": {
+            "filter": false
+        }
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testBoardGuncelle" classname="tests.BoardTest" time="0.419">
+    <system-out><![CDATA[Board güncelleme response: {
+    "id": "6803bba86e3f8bd57ba3d111",
+    "name": "Güncellenmiş Board",
+    "desc": "Test açıklaması",
+    "descData": {
+        "emoji": {
+            
+        }
+    },
+    "closed": false,
+    "idOrganization": "6802aaa1d54a6855c7a8f0b8",
+    "idEnterprise": null,
+    "pinned": false,
+    "url": "https://trello.com/b/T078j7gB/g%C3%BCncellenmi%C5%9F-board",
+    "shortUrl": "https://trello.com/b/T078j7gB",
+    "prefs": {
+        "permissionLevel": "private",
+        "hideVotes": false,
+        "voting": "disabled",
+        "comments": "members",
+        "invitations": "members",
+        "selfJoin": true,
+        "cardCovers": true,
+        "showCompleteStatus": true,
+        "cardCounts": false,
+        "isTemplate": false,
+        "cardAging": "regular",
+        "calendarFeedEnabled": false,
+        "hiddenPluginBoardButtons": [
+            
+        ],
+        "switcherViews": [
+            {
+                "viewType": "Board",
+                "enabled": true
+            },
+            {
+                "viewType": "Table",
+                "enabled": true
+            },
+            {
+                "viewType": "Calendar",
+                "enabled": false
+            },
+            {
+                "viewType": "Dashboard",
+                "enabled": false
+            },
+            {
+                "viewType": "Timeline",
+                "enabled": false
+            },
+            {
+                "viewType": "Map",
+                "enabled": false
+            }
+        ],
+        "background": "blue",
+        "backgroundColor": "#0079BF",
+        "backgroundDarkColor": null,
+        "backgroundImage": null,
+        "backgroundDarkImage": null,
+        "backgroundImageScaled": null,
+        "backgroundTile": false,
+        "backgroundBrightness": "dark",
+        "sharedSourceUrl": null,
+        "backgroundBottomColor": "#0079BF",
+        "backgroundTopColor": "#0079BF",
+        "canBePublic": false,
+        "canBeEnterprise": false,
+        "canBeOrg": false,
+        "canBePrivate": false,
+        "canInvite": true
+    },
+    "labelNames": {
+        "green": "",
+        "yellow": "",
+        "orange": "",
+        "red": "",
+        "purple": "",
+        "blue": "",
+        "sky": "",
+        "lime": "",
+        "pink": "",
+        "black": "",
+        "green_dark": "",
+        "yellow_dark": "",
+        "orange_dark": "",
+        "red_dark": "",
+        "purple_dark": "",
+        "blue_dark": "",
+        "sky_dark": "",
+        "lime_dark": "",
+        "pink_dark": "",
+        "black_dark": "",
+        "green_light": "",
+        "yellow_light": "",
+        "orange_light": "",
+        "red_light": "",
+        "purple_light": "",
+        "blue_light": "",
+        "sky_light": "",
+        "lime_light": "",
+        "pink_light": "",
+        "black_light": ""
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testBoardKontrolListeleriniGetir" classname="tests.BoardTest" time="0.269">
+    <system-out><![CDATA[Board kontrol listeleri response: [
+    
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testBoardListeleriGetir" classname="tests.BoardTest" time="0.263">
+    <system-out><![CDATA[Board listeleri response: [
+    {
+        "id": "6803bba86e3f8bd57ba3d15f",
+        "name": "To Do",
+        "closed": false,
+        "color": null,
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "pos": 16384,
+        "subscribed": false,
+        "softLimit": null,
+        "type": null,
+        "datasource": {
+            "filter": false
+        }
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d160",
+        "name": "Doing",
+        "closed": false,
+        "color": null,
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "pos": 32768,
+        "subscribed": false,
+        "softLimit": null,
+        "type": null,
+        "datasource": {
+            "filter": false
+        }
+    },
+    {
+        "id": "6803bba86e3f8bd57ba3d161",
+        "name": "Done",
+        "closed": false,
+        "color": null,
+        "idBoard": "6803bba86e3f8bd57ba3d111",
+        "pos": 49152,
+        "subscribed": false,
+        "softLimit": null,
+        "type": null,
+        "datasource": {
+            "filter": false
+        }
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testBoardUyelikleriGetir" classname="tests.BoardTest" time="0.291">
+    <system-out><![CDATA[Board üyelikleri response: [
+    {
+        "id": "6803bba86e3f8bd57ba3d12a",
+        "idMember": "6802a84cae324592ec4c6d96",
+        "memberType": "normal",
+        "unconfirmed": false,
+        "deactivated": false
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testBoardYildizlariniGetir" classname="tests.BoardTest" time="0.283">
+    <system-out><![CDATA[Board yıldızları response: [
+    
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testCreateTagForBoard" classname="tests.BoardTest" time="0.424">
+    <system-out><![CDATA[Create tag response: {
+    "id": "6803bbacaf15d6b7bbecf8a9",
+    "idBoard": "6803bba86e3f8bd57ba3d111",
+    "name": "TestTag",
+    "color": null,
+    "uses": 0,
+    "limits": {
+        
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testEtiketOlustur" classname="tests.BoardTest" time="0.408">
+    <system-out><![CDATA[Yeni etiket response: {
+    "id": "6803bbac48d7bcdf1a415351",
+    "idBoard": "6803bba86e3f8bd57ba3d111",
+    "name": "Damra",
+    "color": "red",
+    "uses": 0,
+    "limits": {
+        
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCardsOnBoard" classname="tests.BoardTest" time="0.289">
+    <system-out><![CDATA[Cards on board response: [
+    
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetCustomFieldsForBoard" classname="tests.BoardTest" time="0.279">
+    <system-out><![CDATA[Custom fields response: [
+    
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testGetFilteredCardsOnBoard" classname="tests.BoardTest" time="0.29">
+    <system-out><![CDATA[Filtered cards response: [
+    
+]
+]]></system-out>
+  </testcase>
+  <testcase name="testInviteMemberToBoard" classname="tests.BoardTest" time="0.984">
+    <system-out><![CDATA[Board davet response: {
+    "id": "6803bba86e3f8bd57ba3d111",
+    "members": [
+        {
+            "id": "6802a84cae324592ec4c6d96",
+            "activityBlocked": false,
+            "avatarHash": "deaee7df1804cda13af7d904cc84b28e",
+            "avatarUrl": "https://trello-members.s3.amazonaws.com/6802a84cae324592ec4c6d96/deaee7df1804cda13af7d904cc84b28e",
+            "fullName": "Damra",
+            "idMemberReferrer": null,
+            "initials": "D",
+            "nonPublic": {
+                
+            },
+            "nonPublicAvailable": true,
+            "username": "damra4",
+            "confirmed": true,
+            "memberType": "normal"
+        },
+        {
+            "id": "5110f61930a4387c5600e955",
+            "activityBlocked": false,
+            "avatarHash": "515ff522bf080ed2cfd5c22e442286f0",
+            "avatarUrl": "https://trello-members.s3.amazonaws.com/5110f61930a4387c5600e955/515ff522bf080ed2cfd5c22e442286f0",
+            "fullName": "just",
+            "idMemberReferrer": null,
+            "initials": "JQ",
+            "nonPublic": {
+                
+            },
+            "nonPublicAvailable": true,
+            "username": "just3",
+            "confirmed": true,
+            "memberType": "normal"
+        }
+    ],
+    "memberships": [
+        {
+            "id": "6803bba86e3f8bd57ba3d12a",
+            "idMember": "6802a84cae324592ec4c6d96",
+            "memberType": "normal",
+            "unconfirmed": false,
+            "deactivated": false,
+            "orgMemberType": "admin"
+        },
+        {
+            "id": "6803bbae82660003e7d89f13",
+            "idMember": "5110f61930a4387c5600e955",
+            "memberType": "normal",
+            "unconfirmed": false,
+            "deactivated": false,
+            "orgMemberType": null
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testListeOlustur" classname="tests.BoardTest" time="0.356">
+    <system-out><![CDATA[Yeni liste response: {
+    "id": "6803bbaf18fee44cd379694f",
+    "name": "Test Listesi",
+    "closed": false,
+    "color": null,
+    "idBoard": "6803bba86e3f8bd57ba3d111",
+    "pos": 8192,
+    "type": null,
+    "datasource": {
+        "filter": false
+    },
+    "limits": {
+        
+    }
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testMarkBoardAsViewed" classname="tests.BoardTest" time="0.278">
+    <system-out><![CDATA[Mark as viewed response: {
+    
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testRemoveMemberFromBoard" classname="tests.BoardTest" time="0.805">
+    <system-out><![CDATA[Board üye silme response: {
+    "id": "6803bba86e3f8bd57ba3d111",
+    "name": "Güncellenmiş Board",
+    "desc": "Test açıklaması",
+    "descData": {
+        "emoji": {
+            
+        }
+    },
+    "closed": false,
+    "idOrganization": "6802aaa1d54a6855c7a8f0b8",
+    "idEnterprise": null,
+    "pinned": false,
+    "url": "https://trello.com/b/T078j7gB/g%C3%BCncellenmi%C5%9F-board",
+    "shortUrl": "https://trello.com/b/T078j7gB",
+    "prefs": {
+        "permissionLevel": "private",
+        "hideVotes": false,
+        "voting": "disabled",
+        "comments": "members",
+        "invitations": "members",
+        "selfJoin": true,
+        "cardCovers": true,
+        "showCompleteStatus": true,
+        "cardCounts": false,
+        "isTemplate": false,
+        "cardAging": "regular",
+        "calendarFeedEnabled": false,
+        "hiddenPluginBoardButtons": [
+            
+        ],
+        "switcherViews": [
+            {
+                "viewType": "Board",
+                "enabled": true
+            },
+            {
+                "viewType": "Table",
+                "enabled": true
+            },
+            {
+                "viewType": "Calendar",
+                "enabled": false
+            },
+            {
+                "viewType": "Dashboard",
+                "enabled": false
+            },
+            {
+                "viewType": "Timeline",
+                "enabled": false
+            },
+            {
+                "viewType": "Map",
+                "enabled": false
+            }
+        ],
+        "background": "blue",
+        "backgroundColor": "#0079BF",
+        "backgroundDarkColor": null,
+        "backgroundImage": null,
+        "backgroundDarkImage": null,
+        "backgroundImageScaled": null,
+        "backgroundTile": false,
+        "backgroundBrightness": "dark",
+        "sharedSourceUrl": null,
+        "backgroundBottomColor": "#0079BF",
+        "backgroundTopColor": "#0079BF",
+        "canBePublic": false,
+        "canBeEnterprise": false,
+        "canBeOrg": false,
+        "canBePrivate": false,
+        "canInvite": true
+    },
+    "labelNames": {
+        "green": "",
+        "yellow": "",
+        "orange": "",
+        "red": "",
+        "purple": "",
+        "blue": "",
+        "sky": "",
+        "lime": "",
+        "pink": "",
+        "black": "",
+        "green_dark": "",
+        "yellow_dark": "",
+        "orange_dark": "",
+        "red_dark": "",
+        "purple_dark": "",
+        "blue_dark": "",
+        "sky_dark": "",
+        "lime_dark": "",
+        "pink_dark": "",
+        "black_dark": "",
+        "green_light": "",
+        "yellow_light": "",
+        "orange_light": "",
+        "red_light": "",
+        "purple_light": "",
+        "blue_light": "",
+        "sky_light": "",
+        "lime_light": "",
+        "pink_light": "",
+        "black_light": ""
+    },
+    "members": [
+        {
+            "id": "5110f61930a4387c5600e955",
+            "activityBlocked": false,
+            "avatarHash": "515ff522bf080ed2cfd5c22e442286f0",
+            "avatarUrl": "https://trello-members.s3.amazonaws.com/5110f61930a4387c5600e955/515ff522bf080ed2cfd5c22e442286f0",
+            "fullName": "just",
+            "idMemberReferrer": null,
+            "initials": "JQ",
+            "nonPublic": {
+                
+            },
+            "nonPublicAvailable": true,
+            "username": "just3",
+            "confirmed": true,
+            "memberType": "normal"
+        }
+    ]
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testUpdateEmailPositionPref" classname="tests.BoardTest" time="2.379"/>
+  <testcase name="testUpdateIdEmailListPref" classname="tests.BoardTest" time="0.877">
+    <failure message="status code: 404, reason phrase: Not Found" type="io.restassured.internal.http.HttpResponseException"><![CDATA[io.restassured.internal.http.HttpResponseException: status code: 404, reason phrase: Not Found
+	at io.restassured.internal.http.HTTPBuilder.defaultFailureHandler(HTTPBuilder.java:635)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+	at groovy.lang.MetaClassImpl.invokeMethodClosure(MetaClassImpl.java:1022)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1222)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.Closure.call(Closure.java:418)
+	at groovy.lang.Closure.call(Closure.java:434)
+	at io.restassured.internal.RestAssuredHttpBuilder.doRequest(RestAssuredHttpBuilder.java:150)
+	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:496)
+	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:453)
+	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1480)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendHttpRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:792)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1229)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$sendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:792)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:166)
+	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
+	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.filter.CsrfFilter.filter(CsrfFilter.groovy:70)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+	at io.restassured.filter.Filter$filter.call(Unknown Source)
+	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
+	at io.restassured.filter.FilterContext$next.call(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1704)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:792)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1710)
+	at io.restassured.internal.RequestSpecificationImpl.this$2$applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1348)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1103)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:792)
+	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:46)
+	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:203)
+	at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy:180)
+	at io.restassured.internal.RequestSpecificationImpl.put(RequestSpecificationImpl.groovy)
+	at services.BoardService.updateIdEmailListPref(BoardService.java:498)
+	at tests.BoardTest.testUpdateIdEmailListPref(BoardTest.java:190)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeSingleClass(TestNGDirectoryTestSuite.java:102)
+	at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:91)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]></failure>
+  </testcase>
+  <testcase name="testUpdateMembershipOnBoard" classname="tests.BoardTest" time="2.366"/>
+  <testcase name="testUpdateShowSidebar" classname="tests.BoardTest" time="0.279"/>
+  <testcase name="testUpdateShowSidebarActivity" classname="tests.BoardTest" time="1.346"/>
+  <testcase name="testUpdateShowSidebarBoardActions" classname="tests.BoardTest" time="0.28"/>
+</testsuite>
